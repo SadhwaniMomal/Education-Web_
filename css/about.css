@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+
+/* Top-Navbar-info CSS Starting Here */
+
+ /* Custom background color for contact info section */
+ .top-navbar-info {
+    background-color: #ffa500; /* Adjust to match your theme */
+    color: #ffffff; /* Text color for better readability */
+  }
+
+  /* Styling for the megaphone image with animation */
+  .megaphone-img {
+    width: 50px;
+    height: 50px;
+    animation: pulseFade 3s infinite ease-in-out; /* Smooth pulsing effect */
+  }
+
+  /* Keyframes for the megaphone image animation */
+  @keyframes pulseFade {
+    0%,
+    100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  /* Alignment and styling adjustments for icons and links */
+  .top-navbar-info i,
+  .top-navbar-info a {
+    line-height: 1.5; /* Consistent spacing for icons and text */
+    vertical-align: middle; /* Vertically center-align icons and text */
+  }
+
+  /* Custom styling for anchor links */
+  .top-navbar-info a {
+    color: #ffffff; /* White color for anchor links */
+    text-decoration: none; /* Remove default underline */
+  }
+
+  /* Hover effect for anchor links to improve interactivity */
+  .top-navbar-info a:hover {
+    color: #ffdd00; /* Highlight color on hover */
+  }
+
+  /* Button styling */
+  .btn-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+
+  /* Custom styling for the dropdown menu */
+  .dropdown-menu {
+    background-color: #ffa500; /* Set the background color to black */
+  }
+
+  .dropdown-item {
+    color: white; /* Set the text color to white */
+  }
+
+  .dropdown-item:hover {
+    background-color: #ffa500 !important; /* Change background color on hover */
+    color: #ffffff !important; /* Ensure text color remains white on hover */
+  }
+  
+/* Top-Navbar-info CSS Ending Here */
+
+
+/* Navbar- CSS Section Starting Here */
+   /* Style for logo in the navbar */
+   .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* Style for navbar links */
+  .navbar-nav .nav-item .nav-link {
+    margin-right: 20px;
+  }
+
+  /* Style for Enroll Now button with animation */
+  .btn-enroll {
+    background-color: #6f42c1;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Hover animation for the Enroll Now button */
+  .btn-enroll:hover {
+    background-color: #6610f2;
+    transform: scale(1.1);
+    color: #fff;
+  }
+
+  /* Style for navbar toggler button */
+  .navbar-toggler-btn {
+    padding: 8px 16px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Custom style for the close button */
+  .btn-close-custom {
+    width: 40px;
+    height: 40px;
+    background-color: #6f42c1; /* Purple background */
+    color: white !important;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-close-custom:hover {
+    background-color: #6610f2; /* Darker purple on hover */
+  }
+/* Navbar- CSS Section Ending Here */
