@@ -54,6 +54,12 @@
     border-radius: 20px;
     padding: 8px 20px;
 }
+.btn-enroll:hover{
+    background-color: #6f42c1;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
 
 .btn-close-custom {
     width: 40px;
