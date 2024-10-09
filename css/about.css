@@ -504,15 +504,15 @@ body {
   background-color: #6c63ff;
   color: white;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   /* margin: 0 auto 10px auto; */
   position: absolute;
   top: 10px;
-  right: 90px;
+  right: 100px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -532,10 +532,11 @@ body {
 .icon-learn {
   width: 120px;
   height: 120px;
+  padding: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.785);
   /* border: 3px solid; */
   font-size: 34px;
   color: #f39c12;
@@ -547,14 +548,14 @@ body {
 /* Adjustments for smaller screen sizes */
 @media (max-width: 576px) {
   .step-number {
-    top: 5px;
-    right: 190px;
+    top: 15px;
+    right: 170px;
     width: 35px;
     height: 35px;
   }
   .icon {
     width: 80px;
     height: 80px;
-    font-size: 24px;
+    font-size: 45px;
   }
 }
