@@ -559,3 +559,45 @@ body {
     font-size: 45px;
   }
 }
+
+
+/* Review Section here */
+.testimonial-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimonial-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quote-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #f7b400;
+    color: #fff;
+    border-radius: 2px;
+  }
+  .testimonial-text {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+  }
+  .testimonial-author {
+    font-weight: bold;
+  }
+  .testimonial-role {
+    color: #888;
+  }
+  .rating {
+    color: #f7b400;
+  }
+  .testimonial-img img {
+    width: 100px;
+    height: 100%;
+  }
