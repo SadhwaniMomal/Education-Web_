@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for responsive and character encoding -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS and Font Awesome for styling and icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Meet Our Instructors</title>
+
+    <!-- Custom CSS for the page styling -->
+    <style>
+        /* Styles for the profile card */
+        .profile-card {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 400px;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        /* Profile info box styles */
+        .profile-info {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* Initial state for the share icon */
+        .share-icon {
+            position: absolute;
+            top: -20px;
+            right: -10px;
+            background-color: orange;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        /* Hover effect to show the share icon */
+        .profile-card:hover .share-icon,
+        .profile-info:hover .share-icon {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Styling for the badge displayed at the top of the page */
+        .badge {
+            background-color: #6c63ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Highlighted text style used in the heading */
+        .highlight-text {
+            color: #ff9000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <!-- Header section for the page title and badge -->
+        <div class="text-center mb-4">
+            <span class="badge">Professional Instructor</span>
+            <h2 class="mt-3">Meet Our <span class="highlight-text">Instructors</span></h2>
+        </div>
+
+        <!-- Row to display instructor profiles -->
+        <div class="row justify-content-center">
+
+            <!-- First Column: Instructor Profile -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <div class="profile-card" style="background-image: url('./image/Professional\ Instructor.jpg');">
+                    <div class="profile-info">
+                        <div class="share-icon text-white">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h4>Sophia Adams</h4>
+                        <p>Department Head (English)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Column: Instructor Profile -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <div class="profile-card" style="background-image: url('./image/Professional\ Instructor.jpg');">
+                    <div class="profile-info">
+                        <div class="share-icon text-white">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h4>John Doe</h4>
+                        <p>Senior Lecturer (Mathematics)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Column: Instructor Profile -->
+            <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <div class="profile-card" style="background-image: url('./image/Professional\ Instructor.jpg');">
+                    <div class="profile-info">
+                        <div class="share-icon text-white">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h4>Emily Smith</h4>
+                        <p>Assistant Professor (Physics)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

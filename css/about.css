@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box !important;
 }
+html, body {
+    overflow-x: hidden;    
+    width: 100%;
+}
 
 
 /* Top-Navbar-info CSS */
@@ -414,4 +418,71 @@
 
 .counter-description {
     font-size: 1rem;
+}
+
+ /* professional Insturtor section  */
+  /* Styles for the profile card */
+  .profile-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Profile info box styles */
+.profile-info {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Initial state for the share icon */
+.share-icon {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    background-color: orange;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover effect to show the share icon */
+.profile-card:hover .share-icon,
+.profile-info:hover .share-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Styling for the badge displayed at the top of the page */
+.badge {
+    background-color: #6c63ff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Highlighted text style used in the heading */
+.highlight-text {
+    color: #ff9000;
 }
