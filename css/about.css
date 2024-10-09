@@ -1,322 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    font-family: "Rubik", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box !important;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
 }
-html, body {
-    overflow-x: hidden;    
-    width: 100%;
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
-
 
 /* Top-Navbar-info CSS */
 .top-navbar-info {
-    background-color: #ffa500;
-    color: #ffffff;
+  background-color: #ffa500;
+  color: #ffffff;
 }
 
 .megaphone-img {
-    width: 50px;
-    height: 50px;
-    animation: pulseFade 3s infinite ease-in-out;
+  width: 50px;
+  height: 50px;
+  animation: pulseFade 3s infinite ease-in-out;
 }
 
 @keyframes pulseFade {
-    0%, 100% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 .btn-toggle {
-    background-color: #ffa500;
-    border: none;
-    color: #fff;
-    width: 100%;
-    text-align: center;
+  background-color: #ffa500;
+  border: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
 .dropdown-menu {
-    background-color: #ffa500;
-    z-index: 1050; /* Ensures dropdown is in front of other elements */
-    position: absolute; /* Positions the dropdown correctly */
-    border: none !important;
-    outline: none !important;;
+  background-color: #ffa500;
+  z-index: 1050; /* Ensures dropdown is in front of other elements */
+  position: absolute; /* Positions the dropdown correctly */
+  border: none !important;
+  outline: none !important;
 }
 
 .dropdown-item {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .dropdown-item:hover {
-    background-color: #ffa500;
-    color: #ffffff;
+  background-color: #ffa500;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
-    .top-navbar-info .dropdown {
-        display: flex;
-        justify-content: center;
-    }
+  .top-navbar-info .dropdown {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Navbar CSS */
 .navbar-brand img {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 .navbar-nav .nav-item .nav-link {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .btn-enroll {
-    background-color: #1a2b7f;
-    color: white;
-    border-radius: 20px;
-    padding: 8px 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #1a2b7f;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-enroll:hover {
-    background-color: #1a2b7f;
-    transform: scale(1.1);
-    color: white;
+  background-color: #1a2b7f;
+  transform: scale(1.1);
+  color: white;
 }
 
 .navbar-toggler-btn {
-    padding: 8px 16px;
-    border-radius: 50%;
-    background-color: #f8f9fa;
-    color: #1a2b7f !important;
-    border: none;
+  padding: 8px 16px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #1a2b7f !important;
+  border: none;
 }
 
-
 .btn-close-custom {
-    width: 40px;
-    height: 40px;
-    background-color: #2d3a95;
-    color: white !important;
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease;
+  width: 40px;
+  height: 40px;
+  background-color: #2d3a95;
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .btn-close-custom:hover {
-    background-color: #6610f2;
+  background-color: #6610f2;
 }
 
 /* about container section css */
 
 /* Custom background with a gradient for the container */
 .custom-background {
-    background: linear-gradient(135deg, #2d3a95, #1a2b7f); /* Blue gradient */
-    color: white; /* White text color */
-    position: relative; /* Relative positioning to control child elements */
-    overflow: hidden; /* Hide any overflow from the floating elements */
-    height: 300px; /* Adjusts the height of the background container */
-    display: flex; /* Flexbox layout for centering content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    flex-direction: column; /* Stack items vertically */
-    text-align: center; /* Center align text */
+  background: linear-gradient(135deg, #2d3a95, #1a2b7f); /* Blue gradient */
+  color: white; /* White text color */
+  position: relative; /* Relative positioning to control child elements */
+  overflow: hidden; /* Hide any overflow from the floating elements */
+  height: 300px; /* Adjusts the height of the background container */
+  display: flex; /* Flexbox layout for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center align text */
 }
 
 /* Styling and animation for floating shapes */
 .floating-shape {
-    position: absolute; /* Absolute positioning for independent movement */
-    z-index: 1; /* Controls stacking order */
-    animation: float 6s infinite ease-in-out; /* Floating animation */
+  position: absolute; /* Absolute positioning for independent movement */
+  z-index: 1; /* Controls stacking order */
+  animation: float 6s infinite ease-in-out; /* Floating animation */
 }
 
 /* Common styles for all floating shapes */
 .floating-shape-1,
 .floating-shape-2,
 .floating-shape-3 {
-    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
-    border-radius: 50%; /* Circular shapes */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  border-radius: 50%; /* Circular shapes */
 }
 
 /* Individual shape styling with size, position, and animation */
 .floating-shape-1 {
-    width: 150px;
-    height: 150px;
-    top: 40px; /* Adjusted for better centering */
-    left: 50px; /* Increased for balanced placement */
-    animation-duration: 6s; /* Animation duration */
+  width: 150px;
+  height: 150px;
+  top: 40px; /* Adjusted for better centering */
+  left: 50px; /* Increased for balanced placement */
+  animation-duration: 6s; /* Animation duration */
 }
 
 .floating-shape-2 {
-    width: 100px;
-    height: 100px;
-    bottom: 60px; /* Adjusted for spacing */
-    right: 60px; /* Aligned further to the edge */
-    animation-duration: 8s; /* Longer animation duration */
-    animation-delay: 2s; /* Delay before animation starts */
+  width: 100px;
+  height: 100px;
+  bottom: 60px; /* Adjusted for spacing */
+  right: 60px; /* Aligned further to the edge */
+  animation-duration: 8s; /* Longer animation duration */
+  animation-delay: 2s; /* Delay before animation starts */
 }
 
 .floating-shape-3 {
-    width: 120px;
-    height: 120px;
-    top: 80px; /* Increased top spacing */
-    right: 100px; /* Adjusted for visual symmetry */
-    animation-duration: 10s; /* Even longer animation duration */
-    animation-delay: 4s; /* Longer delay before animation starts */
+  width: 120px;
+  height: 120px;
+  top: 80px; /* Increased top spacing */
+  right: 100px; /* Adjusted for visual symmetry */
+  animation-duration: 10s; /* Even longer animation duration */
+  animation-delay: 4s; /* Longer delay before animation starts */
 }
 
 /* Styling for small floating dots */
 .floating-dot {
-    width: 15px;
-    height: 15px;
-    background: rgba(255, 255, 255, 0.3); /* Slightly more visible background */
-    border-radius: 50%; /* Circular dots */
-    animation: float 5s infinite ease-in-out; /* Continuous floating animation */
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.3); /* Slightly more visible background */
+  border-radius: 50%; /* Circular dots */
+  animation: float 5s infinite ease-in-out; /* Continuous floating animation */
 }
 
 /* Positioning and animation details for individual dots */
 .floating-dot-1 {
-    top: 160px; /* Slightly moved for spacing */
-    left: 100px; /* Adjusted for alignment */
-    animation-duration: 7s; /* Duration of float animation */
-    animation-delay: 1s; /* Start delay */
+  top: 160px; /* Slightly moved for spacing */
+  left: 100px; /* Adjusted for alignment */
+  animation-duration: 7s; /* Duration of float animation */
+  animation-delay: 1s; /* Start delay */
 }
 
 .floating-dot-2 {
-    bottom: 100px; /* Increased spacing */
-    right: 130px; /* Adjusted for symmetry */
-    animation-duration: 9s; /* Slightly longer animation duration */
-    animation-delay: 3s; /* Animation starts after a delay */
+  bottom: 100px; /* Increased spacing */
+  right: 130px; /* Adjusted for symmetry */
+  animation-duration: 9s; /* Slightly longer animation duration */
+  animation-delay: 3s; /* Animation starts after a delay */
 }
 
 /* Floating play icon styling */
 .floating-play-icon {
-    position: absolute; /* Absolute positioning */
-    font-size: 54px; /* Large icon size */
-    color: rgba(255, 255, 255, 0.2); /* Transparent color */
-    animation: float 12s infinite ease-in-out; /* Slow floating animation */
+  position: absolute; /* Absolute positioning */
+  font-size: 54px; /* Large icon size */
+  color: rgba(255, 255, 255, 0.2); /* Transparent color */
+  animation: float 12s infinite ease-in-out; /* Slow floating animation */
 }
 
 /* Individual floating play icons with unique position and animation */
 .floating-play-icon-1 {
-    bottom: 120px; /* Moved slightly up for better placement */
-    left: 25%; /* Adjusted for centered layout */
-    animation-duration: 12s; /* Slower animation */
-    animation-delay: 2s; /* Delay before start */
+  bottom: 120px; /* Moved slightly up for better placement */
+  left: 25%; /* Adjusted for centered layout */
+  animation-duration: 12s; /* Slower animation */
+  animation-delay: 2s; /* Delay before start */
 }
 
 .floating-play-icon-2 {
-    bottom: 180px; /* Increased spacing for separation */
-    left: 65%; /* Positioned to create balance */
-    animation-duration: 14s; /* Longest animation duration */
-    animation-delay: 4s; /* Delay before animation starts */
+  bottom: 180px; /* Increased spacing for separation */
+  left: 65%; /* Positioned to create balance */
+  animation-duration: 14s; /* Longest animation duration */
+  animation-delay: 4s; /* Delay before animation starts */
 }
 
 /* Keyframes defining the floating effect */
 @keyframes float {
-    0% {
-        transform: translateY(0px); /* Starting position */
-    }
-    50% {
-        transform: translateY(-20px); /* Move up */
-    }
-    100% {
-        transform: translateY(0px); /* Return to start */
-    }
+  0% {
+    transform: translateY(0px); /* Starting position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0px); /* Return to start */
+  }
 }
 
 /* Breadcrumb link styling */
 .breadcrumb-item a {
-    color: #ffa500; /* Link color (orange) */
+  color: #ffa500; /* Link color (orange) */
 }
 
 /* Styling for breadcrumb arrow icons */
 .custom-breadcrumb .fa-angles-right {
-    margin: 0 8px; /* Space around arrow icon */
-    color: white; /* Icon color */
+  margin: 0 8px; /* Space around arrow icon */
+  color: white; /* Icon color */
 }
 
 /* Layout styling for the breadcrumb */
 .custom-breadcrumb {
-    display: flex;
-    justify-content: center; /* Center breadcrumb items */
-    align-items: start;
-    list-style: none; /* Remove default list styling */
+  display: flex;
+  justify-content: center; /* Center breadcrumb items */
+  align-items: start;
+  list-style: none; /* Remove default list styling */
 }
-
-
 
 /* About - Us Section Css Here */
 
- /* Styles for the first image */
- .aboutus-img-1 {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-  }
+/* Styles for the first image */
+.aboutus-img-1 {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
 
-  .aboutus-img-1 img {
-    width: 55%;
-    height: 100%;
-  }
+.aboutus-img-1 img {
+  width: 55%;
+  height: 100%;
+}
 
-  /* Styling for the enrolled students section */
-  .enrolled-students {
-    position: absolute;
-    top: 15%;
-    right: 90px;
-    background-color: #fff;
-    color: #ffa500;
-    padding: 15px 10px;
-    border-radius: 2px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-50%);
-  }
+/* Styling for the enrolled students section */
+.enrolled-students {
+  position: absolute;
+  top: 15%;
+  right: 90px;
+  background-color: #fff;
+  color: #ffa500;
+  padding: 15px 10px;
+  border-radius: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
 
-  /* Icon container styling */
-  .icon-container {
-    background-color: #ffa500;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Icon container styling */
+.icon-container {
+  background-color: #ffa500;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .icon-container img {
-    width: 30px;
-    height: auto;
-  }
+.icon-container img {
+  width: 30px;
+  height: auto;
+}
 
-  /* Styles for the second image */
+/* Styles for the second image */
+.aboutus-img-2 {
+  position: absolute;
+  bottom: 0px;
+  right: 45px;
+}
+
+.aboutus-img-2 img {
+  width: 200px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
   .aboutus-img-2 {
-    position: absolute;
-    bottom: 0px;
-    right: 45px;
-  }
-
-  .aboutus-img-2 img {
-    width: 200px;
-    height: 300px;
-  }
-
-  @media (max-width: 768px) {
-    .aboutus-img-2 {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -335,154 +333,228 @@ html, body {
     align-items: center;
     transform: translateY(-50%);
   }
-  .about-us-container{
+  .about-us-container {
     height: 185vh;
   }
-  }
+}
 
-  /* Left-side content styling */
-  .highlight-text {
-    color: #FF9900;
-    font-weight: bold;
-  }
+/* Left-side content styling */
+.highlight-text {
+  color: #ff9900;
+  font-weight: bold;
+}
 
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.2;
-  }
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
 
-  .underline {
-    text-decoration-color: #FF9900;
-  }
+.underline {
+  text-decoration-color: #ff9900;
+}
 
-  .icon-circle {
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
-  }
+.icon-circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
 
-  .icon-circle img {
-    width: 50px;
-    height: auto;
-  }
+.icon-circle img {
+  width: 50px;
+  height: auto;
+}
 
-  .badge-custom {
-    background-color: #6A5ACD;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 25px;
-    font-size: 0.9rem;
-  }
+.badge-custom {
+  background-color: #6a5acd;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
 
-  .feature-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
 
-  /* Counter Section Here */
-  .counter-section {
-    background-color: #6259ca; /* Updated color to match the design */
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    border-radius: 10px; /* Rounded edges for smooth appearance */
+/* Counter Section Here */
+.counter-section {
+  background-color: #6259ca; /* Updated color to match the design */
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 10px; /* Rounded edges for smooth appearance */
 }
 
 .counter-box {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .counter-icon {
-    background-color: rgba(255, 255, 255, 0.1); /* Background for icons */
-    padding: 15px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Background for icons */
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .counter-value {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .counter-description {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
- /* professional Insturtor section  */
-  /* Styles for the profile card */
-  .profile-card {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    color: #000;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 400px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 350px;
+/* professional Insturtor section  */
+/* Styles for the profile card */
+.profile-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 350px;
 }
 
 /* Profile info box styles */
 .profile-info {
-    position: relative;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 10px;
-    border-radius: 3px;
-    text-align: center;
-    cursor: pointer;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* Initial state for the share icon */
 .share-icon {
-    position: absolute;
-    top: -20px;
-    right: -10px;
-    background-color: orange;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  background-color: orange;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* Hover effect to show the share icon */
 .profile-card:hover .share-icon,
 .profile-info:hover .share-icon {
-    opacity: 1;
-    transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* Styling for the badge displayed at the top of the page */
 .badge {
-    background-color: #6c63ff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+  background-color: #6c63ff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
 }
 
 /* Highlighted text style used in the heading */
 .highlight-text {
-    color: #ff9000;
+  color: #ff9000;
+}
+
+/* Learning process section css */
+
+.Learning-container {
+  background-color: ghostwhite;
+}
+
+.step-card {
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 10px 0;
+  position: relative;
+}
+
+.step-number {
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 auto 10px auto; */
+  position: absolute;
+  top: 10px;
+  right: 90px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.step-title {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.step-description {
+  color: #555;
+  font-size: 14px;
+}
+
+.icon-learn {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* border: 3px solid; */
+  font-size: 34px;
+  color: #f39c12;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* Adjustments for smaller screen sizes */
+/* Adjustments for smaller screen sizes */
+@media (max-width: 576px) {
+  .step-number {
+    top: 5px;
+    right: 190px;
+    width: 35px;
+    height: 35px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
 }
