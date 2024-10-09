@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Student Layout</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Styles for the first image */
+      .aboutus-img-1 {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+      }
+
+      .aboutus-img-1 img {
+        width: 55%;
+        height: 100%;
+      }
+
+      /* Styling for the enrolled students section */
+      .enrolled-students {
+        position: absolute;
+        top: 15%;
+        right: 90px;
+        background-color: #fff;
+        color: #ffa500;
+        padding: 15px 10px;
+        border-radius: 2px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+      }
+
+      /* Icon container styling */
+      .icon-container {
+        background-color: #ffa500;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icon-container img {
+        width: 30px;
+        height: auto;
+      }
+
+      /* Styles for the second image */
+      .aboutus-img-2 {
+        position: absolute;
+        bottom: 0px;
+        right: 45px;
+      }
+
+      .aboutus-img-2 img {
+        width: 200px;
+        height: 300px;
+      }
+
+      @media (max-width: 768px) {
+        .aboutus-img-2 {
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+      }
+      .enrolled-students {
+        position: absolute;
+        top: 15%;
+        right: 50px;
+        background-color: #fff;
+        color: #ffa500;
+        padding: 15px 10px;
+        border-radius: 2px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+      }
+        
+      }
+
+      /* Left-side content styling */
+      .highlight-text {
+        color: #FF9900;
+        font-weight: bold;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      .underline {
+        text-decoration-color: #FF9900;
+      }
+
+      .icon-circle {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+      }
+
+      .icon-circle img {
+        width: 50px;
+        height: auto;
+      }
+
+      .badge-custom {
+        background-color: #6A5ACD;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Row to hold both columns with Bootstrap responsive classes -->
+      <div class="row " style="height: 85vh;">
+        <!-- Left Column -->
+        <div
+          class="col-md-6 d-flex about-us-left position-relative h-100 "
+        >
+          <!-- Image 1 positioned absolutely on the left -->
+          <div class="aboutus-img-1 h-100 w-100">
+            <img src="./image/student-6.jpg" alt="Student Image 1" />
+          </div>
+
+          <!-- Enrolled Students Section -->
+          <div
+            class="enrolled-students d-flex justify-content-center align-items-center"
+          >
+            <div class="icon-container">
+              <img
+                src="./image/graduation_5364842.png"
+                alt="Graduation Cap Icon"
+              />
+            </div>
+            <div class="text-container mx-2">
+              <div class="number text-dark fw-bold fs-3">8871+</div>
+              <div class="description">Enrolled Students</div>
+            </div>
+          </div>
+
+          <!-- Image 2 positioned absolutely on the right bottom -->
+          <div class="aboutus-img-2 text-end">
+            <img src="./image/student-4.jpg" alt="Student Image 2" />
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6 py-4">
+            <!-- Badge for "About Us" -->
+            <span class="badge-custom">About Us</span>
+            <!-- Main Heading -->
+            <h1 class="section-title mt-3">We Makes a Door <br> to <span class="highlight-text underline">Bright Future</span></h1>
+
+            <!-- Feature 1 -->
+            <div class="feature-item">
+                <div class="icon-circle">
+                    <img src="image/motivation_8148104.png" alt="Icon 1" />
+                </div>
+                <div>
+                    <h5 class="fw-bold mb-1">Education is Power</h5>
+                    <p class="text-muted mb-0">The cost of ignorance exceeds that of education; it teaches us how to achieve success.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-item">
+                <div class="icon-circle">
+                    <img src="image/millenial_5761177.png" alt="Icon 2" />
+                </div>
+                <div>
+                    <h5 class="fw-bold mb-1">Knowledge for Life</h5>
+                    <p class="text-muted mb-0">Education is smart enough to change the human mind positively; your Door to The Future.</p>
+                </div>
+            </div>
+
+            <!-- Additional Text -->
+            <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque sapiente reiciendis consequuntur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Icons CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>

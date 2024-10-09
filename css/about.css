@@ -249,3 +249,133 @@
     align-items: start;
     list-style: none; /* Remove default list styling */
 }
+
+
+
+/* About - Us Section Css Here */
+
+ /* Styles for the first image */
+ .aboutus-img-1 {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+  }
+
+  .aboutus-img-1 img {
+    width: 55%;
+    height: 100%;
+  }
+
+  /* Styling for the enrolled students section */
+  .enrolled-students {
+    position: absolute;
+    top: 15%;
+    right: 90px;
+    background-color: #fff;
+    color: #ffa500;
+    padding: 15px 10px;
+    border-radius: 2px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+
+  /* Icon container styling */
+  .icon-container {
+    background-color: #ffa500;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-container img {
+    width: 30px;
+    height: auto;
+  }
+
+  /* Styles for the second image */
+  .aboutus-img-2 {
+    position: absolute;
+    bottom: 0px;
+    right: 45px;
+  }
+
+  .aboutus-img-2 img {
+    width: 200px;
+    height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    .aboutus-img-2 {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+  .enrolled-students {
+    position: absolute;
+    top: 15%;
+    right: 50px;
+    background-color: #fff;
+    color: #ffa500;
+    padding: 15px 10px;
+    border-radius: 2px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+    
+  }
+
+  /* Left-side content styling */
+  .highlight-text {
+    color: #FF9900;
+    font-weight: bold;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .underline {
+    text-decoration-color: #FF9900;
+  }
+
+  .icon-circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .icon-circle img {
+    width: 50px;
+    height: auto;
+  }
+
+  .badge-custom {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
