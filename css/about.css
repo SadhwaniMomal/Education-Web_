@@ -331,7 +331,9 @@
     align-items: center;
     transform: translateY(-50%);
   }
-    
+  .about-us-container{
+    height: 185vh;
+  }
   }
 
   /* Left-side content styling */
@@ -379,3 +381,37 @@
     gap: 15px;
     margin-top: 20px;
   }
+
+  /* Counter Section Here */
+  .counter-section {
+    background-color: #6259ca; /* Updated color to match the design */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 10px; /* Rounded edges for smooth appearance */
+}
+
+.counter-box {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.counter-icon {
+    background-color: rgba(255, 255, 255, 0.1); /* Background for icons */
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.counter-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.counter-description {
+    font-size: 1rem;
+}

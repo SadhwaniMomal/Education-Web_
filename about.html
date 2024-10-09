@@ -180,7 +180,7 @@
 
     <!-- about-container section -->
     <!-- Main container for the background and content -->
-    <div class="container-fluid custom-background mb-5 border border-danger">
+    <div class="container-fluid custom-background mb-5 ">
       <!-- Main container for the background and content -->
       <div class="container-fluid custom-background">
         <!-- Floating shapes for decorative effect -->
@@ -214,15 +214,12 @@
       </div>
     </div>
 
-
     <!-- About - Us Section Here  -->
-    <div class="container border border-success">
+    <div class="container  mb-5 about-us-container" >
       <!-- Row to hold both columns with Bootstrap responsive classes -->
-      <div class="row justify-content-center  " style="height: 85vh;">
+      <div class="row justify-content-center" style="height: 85vh">
         <!-- Left Column -->
-        <div
-          class="col-md-6 d-flex about-us-left position-relative h-100 "
-        >
+        <div class="col-md-6 d-flex about-us-left position-relative h-100">
           <!-- Image 1 positioned absolutely on the left -->
           <div class="aboutus-img-1 h-100 w-100">
             <img src="./image/student-6.jpg" alt="Student Image 1" />
@@ -251,36 +248,102 @@
         </div>
 
         <!-- Right Column -->
-        <div class="col-md-6 py-5 px-5 ">
-            <!-- Badge for "About Us" -->
-            <span class="badge-custom">About Us</span>
-            <!-- Main Heading -->
-            <h1 class="section-title mt-3">We Makes a Door <br> to <span class="highlight-text underline">Bright Future</span></h1>
+        <div class="col-md-6 py-5 px-5">
+          <!-- Badge for "About Us" -->
+          <span class="badge-custom">About Us</span>
+          <!-- Main Heading -->
+          <h1 class="section-title mt-3">
+            We Makes a Door <br />
+            to <span class="highlight-text underline">Bright Future</span>
+          </h1>
 
-            <!-- Feature 1 -->
-            <div class="feature-item">
-                <div class="icon-circle">
-                    <img src="image/motivation_8148104.png" alt="Icon 1" />
-                </div>
-                <div>
-                    <h5 class="fw-bold mb-1">Education is Power</h5>
-                    <p class="text-muted mb-0">The cost of ignorance exceeds that of education; it teaches us how to achieve success.</p>
-                </div>
+          <!-- Feature 1 -->
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="image/motivation_8148104.png" alt="Icon 1" />
             </div>
-
-            <!-- Feature 2 -->
-            <div class="feature-item">
-                <div class="icon-circle">
-                    <img src="image/millenial_5761177.png" alt="Icon 2" />
-                </div>
-                <div>
-                    <h5 class="fw-bold mb-1">Knowledge for Life</h5>
-                    <p class="text-muted mb-0">Education is smart enough to change the human mind positively; your Door to The Future.</p>
-                </div>
+            <div>
+              <h5 class="fw-bold mb-1">Education is Power</h5>
+              <p class="text-muted mb-0">
+                The cost of ignorance exceeds that of education; it teaches us
+                how to achieve success.
+              </p>
             </div>
+          </div>
 
-            <!-- Additional Text -->
-            <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque sapiente reiciendis consequuntur.</p>
+          <!-- Feature 2 -->
+          <div class="feature-item">
+            <div class="icon-circle">
+              <img src="image/millenial_5761177.png" alt="Icon 2" />
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Knowledge for Life</h5>
+              <p class="text-muted mb-0">
+                Education is smart enough to change the human mind positively;
+                your Door to The Future.
+              </p>
+            </div>
+          </div>
+
+          <!-- Additional Text -->
+          <p class="mt-4 text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+            doloremque sapiente reiciendis consequuntur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counter Section Here -->
+    <div class="container counter-section mb-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3 col-sm-6 mb-4 counter-box">
+          <div class="counter-icon">
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/graduation-cap.png"
+              alt="Students Enrolled Icon"
+            />
+          </div>
+          <div>
+            <div class="counter-value" data-target="2548">0</div>
+            <div class="counter-description">Students Enrolled</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 counter-box">
+          <div class="counter-icon">
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/teacher.png"
+              alt="Certified Teachers Icon"
+            />
+          </div>
+          <div>
+            <div class="counter-value" data-target="123">0</div>
+            <div class="counter-description">Certified Teachers</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 counter-box">
+          <div class="counter-icon">
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/book.png"
+              alt="Premium Courses Icon"
+            />
+          </div>
+          <div>
+            <div class="counter-value" data-target="423">0</div>
+            <div class="counter-description">Premium Courses</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 counter-box">
+          <div class="counter-icon">
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/conference.png"
+              alt="Affiliated Partners Icon"
+            />
+          </div>
+          <div>
+            <div class="counter-value" data-target="15">0</div>
+            <div class="counter-description">Affiliated Partners</div>
+          </div>
         </div>
       </div>
     </div>
@@ -297,5 +360,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
+    <script src="./js/counter.js" defer></script>
   </body>
 </html>
